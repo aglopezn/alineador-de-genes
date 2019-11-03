@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> Alineador de Secuencias </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<!-- Aquí empiza el header -->
+		<header>
+			<h1><a href="https://aglopezn.github.io/alineador-de-genes/">Alineador de Secuencias Genéticas</a></h1>
+			<ul>
+				<li><a href="ayuda.html">Ayuda</a></li>
+			</ul>
+		</header>
+		<!-- Aquí termina el header -->
+			
+		
+		<!-- Inicia el cuerpo de la página -->
+		<div class="container ayuda">
+            
+            <h2>Ayuda</h2>
+            <p>
+                Este programa permite tomar un archivo en formato FASTA el cual contenga dos secuencias de nucleotidos (ADN) y alinearlos
+                de forma óptima, utilizando el
+                <a href="https://es.wikipedia.org/wiki/Algoritmo_Needleman-Wunsch" target="_blank">Algoritmo Needleman-Wunsch</a>
+            </p>
+            <h3>Formato FASTA</h3>
+            <p>
+                El formato FASTA, es un tipo de formato en el cual se almacenan secuencias de nucleotidos. Es un archivo de texto plano con la extensión
+                .fasta, .fast o .fa. La estructura básica de un archivo de este formato consiste en lo siguiente: Se debe empezar con un símbolo de
+                mayor que '>' seguido del nombre de la secuencia, en seguida un salto de linea y se procede a digitar la secuencia de nucleótidos, 
+                pero no puede sobrepasar los 80 carácteres por línea. Cuando se desee agregar otra secuencia nuevamente se escribe el símbolo de mayor 
+                que '>' con el nombre de la otra secuencia, un salto de línea y la secuencia como tal.
+            </p>
+            <h3>Secuencias de ejemplo</h3>
+            <p>
+                En el repositorio donde se encuentra almacenado este proyecto puede encontrar una carpeta llamada "secuencias_ejemplo" y allí puede encontrar
+                varios archivos con secuencias de nucleótidos (ADN) para utilizar el programa.
+            </p>
+            <h3>Uso del software</h3>
+            <p>
+                El uso del software consiste en dos botones principales, el botón "Cargar archivo" mediante el cual puede subir su archivo FASTA al programa y
+                visualizarlo en el previsualizador junto a los botones. Una vez haya cargado puede proceder a presionar el botón "Alinear secuencias" el cual 
+                alineará automáticamente las secuencias del archivo y las mostrará en el visor principal debajo de los botones. Adicionalmente, las secuencias se 
+                mostrarán de diferentes colores, las convenciones las puede encontrar debajo del visor así como también el puntaje que tuvo la alineación.
+            </p>
+            <h3>Alcance</h3>
+            <p>
+                El programa puede cargar archivos de las siguientes extensiones: 
+                <ul>
+                    <li>.fasta</li>
+                    <li>.fast</li>
+                    <li>.fas</li>
+                    <li>.fa</li>
+                    <li>.txt</li>
+                </ul>
+                Por otro lado, solamente puede alinear dos secuencias, por lo tanto archivos que contengan más de 2 secuencias pueden entrar en conflicto y reportar
+                resultados inesperados.
+            </p>
+            <p>
+                Finalmente, se sugiere que la línea en la cual se ingresa el nombre de la secuencia no contenga más de 80 carácteres y no haya ningún salto de línea.
+            </p>
+          
+		</div>
+		<!-- Termina el cuerpo de la página -->
+
+		<!-- Inicia el footer -->
+		<footer>
+			<div>
+				<ul class="copyright">
+                        <li><a href="https://github.com/aglopezn/alineador-de-genes" target="_blank">&copy; 2019 Alineador de Secuencias Genéticas.</a></li>
+				</ul>
+			</div>
+			<div class="contacto">
+				<ul>
+					<li><a href="https://aglopezn.github.io/" target="_blank">Andres Giovany Lopez Nechiza</a></li>
+					<li><a href="https://www.linkedin.com/in/giovany-lopez-n/" target="_blank">LinkedIn</a></li>
+					<li><a href="mailto: giovanyn@hotmail.es">giovanyn@hotmail.es</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- Termina el footer  -->			
+
+		<script src="scripts/logica.js"></script>
+	</body>
+
+</html>

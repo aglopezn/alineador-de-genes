@@ -9,6 +9,7 @@
 	--orange-font: #f35a00f5;
 	--green-font: #218a0ef5;
 	--red-font: #ff0000f5;
+	--black-color: #020115;
 }
 
 
@@ -17,8 +18,18 @@ html, body {
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
 	background-color: var(--white-color);
-	font-size: 12px;
+	color:  var(--black-color);
 }
+
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 16px;
+}
+
 
 /* ------- Header ------- */
 
@@ -31,8 +42,18 @@ header {
 	height: 60px;
 }
 
+header a{
+	text-decoration: none;
+	color: var(--white-font);
+}
+
+header a:hover {
+	cursor: pointer;
+	color: var(--black-color);
+}
+
 h1 {
-	font-size: 30px;
+	font-size: 36px;
 	margin: 0px;
 }
 
@@ -43,7 +64,6 @@ header ul {
 	padding: 0px;
 	right: 0px;
 	top: 19px;
-	visibility: hidden;
 }
 
 header li {
@@ -151,6 +171,26 @@ header li {
 
 #convencion1, #convencion2, #convencion3 {
 	color: black;
+}
+
+/* -------- Ayuda ------- */
+.ayuda {
+	text-align: justify;
+}
+
+.ayuda h2{
+	text-align: center;
+}
+
+.ayuda a {
+	text-decoration: none;
+	color: var(--black-color);
+}
+
+.ayuda a:hover {
+	cursor: pointer;
+	color: var(--red-color);
+	text-decoration: underline;
 }
 
 
