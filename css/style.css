@@ -1,0 +1,187 @@
+:root {
+	--blue-color: #081648e6;
+	--white-color: #88898c1a;
+	--white-font: #ffffff;
+	--red-color: #8e0404f5;
+	--button: #1f1818f5;
+	--button-press: #615858f5;
+	--border: #1f1818f5;
+	--orange-font: #f35a00f5;
+	--green-font: #218a0ef5;
+	--red-font: #ff0000f5;
+}
+
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--white-color);
+	font-size: 12px;
+}
+
+/* ------- Header ------- */
+
+header {
+	background-color: var(--red-color);
+	color: var(--white-font);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 0px;
+}
+
+header ul {
+	display: flex;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	right: 0px;
+	top: 19px;
+	visibility: hidden;
+}
+
+header li {
+	list-style: none;
+	font-size: 16px;
+	padding-right: 32px;
+}
+
+/* --------- CUERPO DEL PROGRAMA ---------- */
+
+
+/* Primera Seccion, visor del archivo y botones */
+#subirArchivo{
+	display: none;
+}
+
+
+#visorArchivo {
+	resize: none;
+	width: 100%;
+	height: 200px;
+}
+
+.botones {
+	display: block;
+	height: 40%;
+	width: 90%;
+	margin: 5%;
+	padding: 10%;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px;
+	background-color: var(--button);
+	color: var(--white-font);
+}
+
+.botones:hover {
+	cursor: pointer;
+	background-color: var(--button-press);
+	
+}
+
+
+/* Segunda sección, visor de la alineacion */
+.col-6.visor {
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid var(--border);
+	min-height: 100px;
+	max-width: 95%;
+	justify-content: center;
+}
+
+.visor table {
+	margin: auto;
+}
+
+.nombreSecuencia{
+	font-weight: bold;
+}
+
+
+/* Tercera sección, puntaje y convenciones de color */
+.hueco {
+	color: var(--red-font);
+}
+
+.diferentes {
+	color: var(--orange-font);
+}
+
+.iguales {
+	color: var(--green-font);
+}
+
+.row.informacion {
+	height: 100px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.row.informacion h5{
+	font-size: 20px;
+	margin:0px;
+	padding: 10px;
+}
+
+.row.informacion p{
+	margin: auto;
+	padding: 12px;
+	font-size: 16px;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	max-width: 60%;
+	min-height: 37px;
+	font-weight: bold;
+}
+
+.row.informacion ul {
+	text-align: left;
+}
+.row.informacion li{
+	list-style: square;
+}
+
+#convencion1, #convencion2, #convencion3 {
+	color: black;
+}
+
+
+/* -------- FOOTER ------- */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: var(--white-font);
+	padding: 8px 0px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer li {
+	list-style: none;
+	padding-right: 32px;
+}
+
+footer a{
+	color: var(--white-font);
+	text-decoration: none;
+}
+
+footer a:hover{
+	cursor: pointer;
+	color: var(--red-color);
+}
+

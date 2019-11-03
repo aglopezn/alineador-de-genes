@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> Alineador de Secuencias </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<!-- Aquí empiza el header -->
+		<header>
+			<h1>Alineador de Secuencias Genéticas</h1>
+			<ul>
+				<li>Ayuda</li>
+			</ul>
+		</header>
+		<!-- Aquí termina el header -->
+			
+		
+		<!-- Inicia el cuerpo de la página -->
+		<div class="container">
+
+			<div class="row">
+				<div class="col-4 visor">
+					<!-- <iframe src="" id="visorArchivo"></iframe> -->
+					<textarea id="visorArchivo" cols="80" readonly>Esperando archivo...</textarea>
+				</div>
+				<div class="col-2 ">
+					<input type="file" id="subirArchivo" accept=".txt, .text, .fa, .fas, .fast, .fasta">
+					<button class="botones" id="btnSubirArchivo">Cargar archivo</button>
+					<button class="botones" id="btnAlinearSecuencia">Alinear secuencias</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 visor">
+					<table id="visorAlineacion"> </table>
+				</div>
+			</div>
+
+			<div class="row informacion">
+				<div class="col-3 puntaje">
+					<h5>Puntaje</h5>
+					<p id="puntajeDeAlineacion"></p>
+				</div>
+				<div class="col-3 convenciones">
+					<h5>Convenciones</h5>
+					<ul>
+						<li class="iguales">Verde: <span id="convencion1">La alineación corresponde a dos nucleotidos iguales</span> </li>
+						<li class="diferentes">Naranja: <span id="convencion2">La alineación corresponde a dos nucleotidos diferentes</span></li>
+						<li class="hueco">Rojo: <span id="convencion3">La alineación corresponde a un nucleotido y un espacio vacio</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Termina el cuerpo de la página -->
+
+		<!-- Inicia el footer -->
+		<footer>
+			<div>
+				<ul class="copyright">
+					<li>&copy; 2019 Alineador de Secuencias Genéticas.</li>
+				</ul>
+			</div>
+			<div class="contacto">
+				<ul>
+					<li><a href="https://aglopezn.github.io/" target="_blank">Andres Giovany Lopez Nechiza</a></li>
+					<li><a href="https://www.linkedin.com/in/giovany-lopez-n/" target="_blank">LinkedIn</a></li>
+					<li><a href="mailto: giovanyn@hotmail.es">giovanyn@hotmail.es</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- Termina el footer  -->			
+
+		<script src="scripts/logica.js"></script>
+	</body>
+
+</html>

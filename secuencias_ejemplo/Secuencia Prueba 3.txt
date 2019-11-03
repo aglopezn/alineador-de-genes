@@ -1,0 +1,7 @@
+>Secuencia 1
+CGT
+CTT
+>Secuencia 2
+ACC
+GTC
+TT

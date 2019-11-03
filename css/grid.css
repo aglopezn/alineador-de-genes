@@ -1,0 +1,43 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    justify-content: center;
+}
+
+.col-1 {
+    width: 16.666666%;
+}
+
+.col-2 {
+    width: 33.333333%;
+}
+
+.col-3 {
+    width: 49.999999%;
+}
+
+.col-4 {
+    width: 66.666666%;
+}
+
+.col-5 {
+    width: 83.333333%;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+    padding: 10px;
+    justify-content: center;
+    height: 100%;
+} 
+
