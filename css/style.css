@@ -184,7 +184,7 @@ header li {
 
 .ayuda a {
 	text-decoration: none;
-	color: var(--black-color);
+	color: var(--red-color);
 }
 
 .ayuda a:hover {
